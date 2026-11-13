@@ -1,0 +1,132 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "80deb0a9-95f2-4a9a-803f-388f173091f9")
+	(paper "A4")
+	(lib_symbols)
+	(text "Function Generator"
+		(exclude_from_sim no)
+		(at 98.806 58.674 0)
+		(effects
+			(font
+				(size 10.16 10.16)
+				(thickness 2.032)
+				(bold yes)
+			)
+		)
+		(uuid "43530f4e-4fa2-41fc-9f3b-d87592be11d3")
+	)
+	(text_box "Microcontroller-Based Function Generator\n\nOutputs: sine, triangle, square / 10 Hz to 100 kHz / 0 to + or - 5V adjustable, DC offset\nController: Raspberry Pi Pico 2 (RP2350) / Waveform: AD9833 DDS (25 MHz)\nAmplitude/offset: MCP42010 digital pot / Output: TL072, two gain stages, 51 ohm to BNC\n\nPower: 5 V USB -> Pico VBUS -> Pico 3V3 (digital) / 5 V -> DCP010512DBP -> + or -12 V (analog)\nGrounds: GND (digital) and AGND (analog) joined at one point by R11 (0 ohm) at the AD9833 header"
+		(exclude_from_sim no)
+		(at 27.686 68.834 0)
+		(size 143.256 57.404)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "9a85f700-9abf-4ee2-bd0a-cc79e90272d0")
+	)
+	(sheet
+		(at 176.276 86.868)
+		(size 45.466 21.844)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "4535d3cf-c563-4a8a-923f-abd38b5d1d86")
+		(property "Sheetname" "Analog"
+			(at 176.276 86.1564 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Analog.kicad_sch"
+			(at 176.276 109.2966 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "FunctionGenv1.0"
+				(path "/80deb0a9-95f2-4a9a-803f-388f173091f9"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 224.79 86.36)
+		(size 45.72 21.844)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "5246a7e0-0b44-4d82-8121-749ccf940f8b")
+		(property "Sheetname" "Digital"
+			(at 224.79 85.6484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Digital.kicad_sch"
+			(at 224.79 108.7886 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "FunctionGenv1.0"
+				(path "/80deb0a9-95f2-4a9a-803f-388f173091f9"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
