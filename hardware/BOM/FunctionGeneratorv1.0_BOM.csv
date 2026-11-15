@@ -1,0 +1,38 @@
+﻿Total parts cost,$67.86,,,,,,,,,,,,,,
+Budget,$100.00,,,,,,,,,,,,,,
+Remaining,$32.14,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+Designator,Qty,Value,Package,Spec / rating,Assembly,LCSC Part #,JLC Type,Manufacturer,MPN,Description,Supplier,Supplier Part #,Unit price,Ext. price,Notes
+"C1, C2, C3, C4, C6, C13, C15",7,100n,0805,"X7R, 50 V",JLC assembly,C49678,Basic,YAGEO,CC0805KRX7R9BB104,MLCC capacitor,JLCPCB,C49678,$0.01,$0.07,C2 and C3 sit on -12V / +12V
+"C5, C7, C14, C16",4,10u,0805,"X5R, 25 V",JLC assembly,C15850,Basic,Samsung Electro-Mechanics,CL21A106KAYNNNE,MLCC capacitor,JLCPCB,C15850,$0.01,$0.04,C7 is the signal coupling cap
+"C8, C11",2,1u,0805,"X7R, 50 V",JLC assembly,C28323,Basic,Samsung Electro-Mechanics,CL21B105KBFNNNE,MLCC capacitor,JLCPCB,C28323,$0.03,$0.06,On +/-VOUT of the DCP
+"C9, C12",2,10u,1206,"X5R, 50 V",JLC assembly,C13585,Basic,Samsung Electro-Mechanics,CL31A106KBHNNNE,MLCC capacitor,JLCPCB,C13585,$0.45,$0.90,On the +/-12V rails. X5R 50 V is fine here
+C10,1,10u,0805,"X5R, 25 V",JLC assembly,C15850,Basic,Samsung Electro-Mechanics,CL21A106KAYNNNE,MLCC capacitor,JLCPCB,C15850,$0.06,$0.06,"DCP input cap. No Basic 2.2u in 0805, so this uses the same 10u Basic part as row 7. Change C10 to 10u in the schematic"
+"FB1, FB2",2,120R @ 100 MHz,0805,"800 mA, DCR 0.15 ohm",JLC assembly,C5671,Extended,Sunlord,GZ2012D121TF,Ferrite bead,JLCPCB,C5671,$0.02,$0.04,"Extended part (one-time fee). This is a ferrite bead, not a 120 ohm resistor"
+R1,1,0 ohm,0805,"Jumper, 125 mW",JLC assembly,C17477,Basic,UNI-ROYAL,0805W8F0000T5E,Resistor,JLCPCB,C17477,$0.01,$0.01,Single AGND-GND tie
+"R2, R11",2,2.7k,0805,"1%, 125 mW",JLC assembly,C17530,Basic,UNI-ROYAL,0805W8F2701T5E,Resistor,JLCPCB,C17530,$0.01,$0.02,"DCP preloads, about 53-63 mW each, so 125 mW is fine"
+R3,1,100k,0805,"1%, 125 mW",JLC assembly,C149504,Basic,UNI-ROYAL,0805W8F1003T5E,Resistor,JLCPCB,C149504,$0.01,$0.01,
+R4,1,1k,0805,"1%, 125 mW",JLC assembly,C17513,Basic,UNI-ROYAL,0805W8F1001T5E,Resistor,JLCPCB,C17513,$0.01,$0.01,Stage 1 gain
+"R5, R6",2,3.3k,0805,"1%, 125 mW",JLC assembly,C26010,Basic,UNI-ROYAL,0805W8F3301T5E,Resistor,JLCPCB,C26010,$0.01,$0.02,"Stage 1 / stage 2 gain. Schematic shows 3k3 and 3.3k; make them match so they merge"
+R7,1,4.7k,0805,"1%, 125 mW",JLC assembly,C17673,Basic,UNI-ROYAL,0805W8F4701T5E,Resistor,JLCPCB,C17673,$0.01,$0.01,Offset input
+R8,1,15k,0805,"1%, 125 mW",JLC assembly,C17475,Basic,UNI-ROYAL,0805W8F1502T5E,Resistor,JLCPCB,C17475,$0.02,$0.02,Stage 2 gain
+R9,1,51 ohm,0805,"1%, 125 mW",JLC assembly,C17738,Basic,UNI-ROYAL,0805W8F510JT5E,Resistor,JLCPCB,C17738,$0.01,$0.01,Output series resistor
+R10,1,33k,0805,"1%, 125 mW",JLC assembly,C17633,Basic,UNI-ROYAL,0805W8F3302T5E,Resistor,JLCPCB,C17633,$0.01,$0.01,Offset bias from -12V
+U1,1,MCP42010,DIP-14,Dual 10k digital pot,Hand solder,C636805,N/A,Microchip,MCP42010-I/P,Digital potentiometer,Digikey,MCP42010-I/P-ND,$3.03,$3.03,Socketed
+U2,1,TL072,DIP-8,Dual JFET op-amp,Hand solder,C7236,N/A,TI,TL072CP,Op-amp,Digikey,296-1775-5-ND,$1.20,$1.20,"Out of stock at DigiKey (50 expected 28-Dec-2026). Check lab first. DIP-8 swaps: TL072BCP, TL072ACP, ST TL072CN, or TL082CP"
+U3,1,DCP010512DBP,DIP-14 footprint,"5 V in, +/-12 V out, isolated",Hand solder,C527459,N/A,TI,DCP010512DBP,DC-DC converter,Digikey,DCP010512DBP-ND,$22.66,$22.66,"Unregulated, needs the preloads"
+A1,1,Pico 2 H,Module,RP2350,Hand solder,C49385029,N/A,Raspberry Pi,SC1632,"Microcontroller board, headers pre-soldered",Digikey,2648-SC1632-ND,$6.00,$6.00,Plugs into the 1x20 female headers (row 35)
+AD1,1,1x7 socket,2.54 mm,Female header,Hand solder,C5342086,N/A,Sullins,PPTC071LFBN-RC,Socket for AD9833 module,Digikey,S7005-ND,$0.56,$0.56,
+J1,1,BNC,Right angle,50 ohm,Hand solder,5227161-9,N/A,TE,5227161-9,BNC jack,Digikey,A32261-ND,$4.95,$4.95,Output
+J2,1,1x4 socket,2.54 mm,Female header,Hand solder,C3319639,N/A,Sullins,PPTC041LFBN-RC,Socket for OLED,Digikey,S7002-ND,$0.42,$0.42,
+J3,1,1x5 socket,2.54 mm,Female header,Hand solder,C3320579,N/A,Sullins,PPTC051LFBN-RC,Socket for KY-040,Digikey,S6103-ND,$0.44,$0.44,
+"SW1, SW2, SW3",3,6 mm tactile,THT,,Hand solder,TS665CJ,N/A,SHOU HAN,TS665CJ,Push button,Digikey,SHOU HAN TS665CJ,$0.00,$0.00,Reset / Waveform / On-Off
+"TP1, TP2, TP3, TP6",4,Test point,Keystone 5000 series,White,Hand solder,C238123,N/A,Keystone,5002,Test point,Digikey,36-5002-ND,$0.27,$1.08,
+"TP4, TP5, TP8, TP9",4,Test point,Keystone 5000 series,Red,Hand solder,C5199900,N/A,Keystone,5000,Test point,Digikey,36-5000-ND,$0.27,$1.08,
+"TP7, TP10",2,Test point,Keystone 5000 series,Black,Hand solder,C238122,N/A,Keystone,5001,Test point,Digikey,36-5001-ND,$0.27,$0.54,
+Off board,2,DIP-14 socket,DIP-14,N/A,Hand solder,C6942122,N/A,On Shore,ED14DT,"IC socket (U1, U3)",Digikey,ED3045-5-ND,$0.52,$1.04,"0.3 in (7.62 mm) row spacing, matches the DIP-14 W7.62mm footprint"
+Off board,1,DIP-8 socket,DIP-8,N/A,Hand solder,C3170507,N/A,On Shore,ED08DT,IC socket (U2),Digikey,ED3044-5-ND,$0.47,$0.47,0.3 in (7.62 mm) row spacing
+Off board,2,1x20 female header,2.54 mm,N/A,Hand solder,C5845594,N/A,Sullins,PPTC201LFBN-RC,Pico sockets,Digikey,S7018-ND,$1.14,$2.28,Raises the Pico so parts on its underside clear the board
+Off board,1,0.96 in OLED,Module,"SSD1306, I2C",Hand solder,N/A,N/A,ELEGOO,N/A,Display module,Amazon,N/A,$3.33,$3.33,Goes in J2
+Off board,1,KY-040,Module,Rotary encoder with switch,Hand solder,N/A,N/A,DEVMO,N/A,Encoder module,Amazon,N/A,$4.50,$4.50,Goes in J3
+Off board,1,AD9833 module,Module,"GY-9833, 25 MHz",Hand solder,N/A,N/A,HiLetgo,N/A,DDS module,Amazon,N/A,$12.99,$12.99,Goes in AD1
