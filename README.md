@@ -1,7 +1,7 @@
 # Function Generator
 
 A microcontroller-based function generator built for BEE 425 at UW Bothell (Fall 2026). A Raspberry Pi Pico 2 controls an AD9833 DDS chip, and a two-stage op-amp output amplifier delivers sine, triangle, and square waves from 10 Hz to 100 kHz at up to +/-5 V. Everything runs on a custom 2-layer PCB powered from a USB wall adapter.
-<img width="1122" height="572" alt="pcb-3d-top" src="https://github.com/user-attachments/assets/a0a1fc71-4e11-4475-8275-e7f8927da6a6" />
+<img width="1277" height="607" alt="Screenshot 2026-11-16 at 9 58 31 PM" src="https://github.com/user-attachments/assets/7ff39d4d-00aa-4fa7-a449-1f045bc8d442" />
 
 ## Features
 
@@ -31,9 +31,10 @@ The Pico 2 reads the encoder and buttons, updates the OLED, and programs the AD9
 
 2-layer board, 135 x 72 mm, all components on the top side. Analog and digital ground pours are separated and joined at a single point next to the AD9833.
 
-<img width="993" height="611" alt="pcb-layout" src="https://github.com/user-attachments/assets/8e259d20-b748-445c-8b8c-5fd0515965d9" />
+<img width="952" height="574" alt="Screenshot 2026-11-16 at 10 12 11 PM" src="https://github.com/user-attachments/assets/7c8fd9c0-b5e9-4b69-87b0-0c0166042d5e" />
 
-<img width="994" height="506" alt="pcb-3d-bottom" src="https://github.com/user-attachments/assets/175250ca-4d9a-4bf4-adb5-c6ad6308c66b" />
+<img width="1255" height="609" alt="Screenshot 2026-11-16 at 9 58 42 PM" src="https://github.com/user-attachments/assets/e7c37efa-eeb0-4a1c-b27f-1e411825d1d8" />
+
 
 ## Pico Pinout
 
