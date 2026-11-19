@@ -1,4 +1,5 @@
 # Firmware Guide
+Authored by Cris R. Martinez Hernandez 
 
 How to build, flash, and extend the firmware for the BEE 425 function generator (board rev v1.1). The firmware runs on a Raspberry Pi Pico 2 (RP2350) and is written in C with the Raspberry Pi Pico SDK.
 
@@ -70,7 +71,7 @@ The USB cable also powers the whole board, including the +/-12 V converter, so t
 
 ## Pin Map
 
-Checked against the v1.1 PCB.
+Checked against the v1.1 PCB files 
 
 | Signal | Pico pin | GPIO | Notes |
 | --- | --- | --- | --- |
